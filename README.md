@@ -19,3 +19,32 @@
     bulan_lahir VARCHAR(10) NULL,
     tahun_lahir VARCHAR(4) NULL
 )
+
+# CREATE CONNECTION
+connection.php
+	
+	<?php 
+
+		// membuat variabel
+		$hostname = "localhost";
+		$username = "root";
+		$password = "";
+		$database = "day13_project01";
+
+		// membuat coneksi
+		$connection = new mysqli(
+			$hostname,
+			$username,
+			$password,
+			$database
+		);
+
+		// periksa koneksi
+
+		if($connection->connect_error){
+			echo "koneksi gagal";
+		}else{
+			echo "koneksi berhasil";
+		}
+		
+ 	?>
