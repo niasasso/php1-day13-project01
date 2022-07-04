@@ -14,13 +14,13 @@
 		$database
 	);
 
-	// periksa koneksi
+	// // periksa koneksi
 
-	if($connection->connect_error){
-		echo "koneksi gagal";
-	}else{
-		echo "koneksi berhasil";
-	}
+	// if($connection->connect_error){
+	// 	echo "koneksi gagal";
+	// }else{
+	// 	echo "koneksi berhasil";
+	// }
 
 
 
